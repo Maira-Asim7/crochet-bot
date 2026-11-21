@@ -1,0 +1,96 @@
+{
+  "_about": "Answer key for the test photos. Source: the sister's handwritten notes (21 Nov 2026), confirmed by her. One entry per photo.",
+  "entries": [
+    {
+      "photo": "01-pudding-keychain.png",
+      "item": "pudding keychain (amigurumi)",
+      "not_this": ["cupcake"],
+      "parts": [
+        "pudding body: brown top (R1-R3), light yellow sides (R4-R10), stuffed with cotton",
+        "whipped cream: white",
+        "cherry: red",
+        "metal key ring"
+      ],
+      "main_stitch": "sc",
+      "stitches_used": ["mr", "sc", "inc", "dec", "hdc", "ch", "slst", "blo"],
+      "yarn": "3-ply acrylic (red, white, brown, light yellow)",
+      "hook_mm": 3.5,
+      "pattern": {
+        "cherry": [
+          "R1: mr, 4sc [4]",
+          "R2: (sc, inc)*2 [6]",
+          "R3: 6sc [6]",
+          "Glue: cut the yarn short. Sew: leave a long tail to sew cherry + whipped cream + pudding together."
+        ],
+        "whipped_cream": [
+          "R1: mr (2ch, hdc, 2ch, slst on the ring)*4"
+        ],
+        "pudding": [
+          "Brown yarn:",
+          "R1: mr, 6sc [6]",
+          "R2: inc*6 [12]",
+          "R3: (sc, inc)*6 [18]  (confirmed by the sister; the page said *2)",
+          "Change to light yellow yarn:",
+          "R4: BLO 18sc [18]",
+          "R5-R6: 18sc [18]",
+          "R7: (2sc, inc)*6 [24]",
+          "R8: 24sc [24]",
+          "R9: BLO (2sc, dec)*6 [18]",
+          "Stuff with cotton",
+          "R10: (sc, dec)*6 [12]",
+          "Slst on the 1st stitch, cut the yarn and weave in the end"
+        ]
+      },
+      "model_runs": [
+        {
+          "model": "qwen3-vl:4b",
+          "date": "2026-11-21",
+          "prompt": "Describe this crocheted item and which stitches you can see.",
+          "seconds_approx": "over 60",
+          "item_name_correct": false,
+          "model_said_item": "cupcake keychain",
+          "parts_and_colours_correct": true,
+          "main_stitch_correct": true,
+          "missed": ["inc", "dec", "mr", "blo", "hdc", "slst on the cream"],
+          "wrong": ["said the white part is sc", "suggested dc might be used"],
+          "gave_round_counts": false,
+          "stated_uncertainty": false
+        }
+      ]
+    },
+    {
+      "photo": "02-sunflower-granny-cardigan.png",
+      "item": "sunflower granny square cardigan (photo shows part of a garment)",
+      "note": "The sister wrote ONE granny square only. Joining, border and shaping are not written down.",
+      "yarn": "3-ply acrylic",
+      "hook_mm": 4,
+      "pattern_one_square": [
+        "Brown yarn: R1: mr, 2ch, 16dc in mr (slst at the end)",
+        "Orange yarn (petals): R2: 3ch, puff stitch all around in the 16dc (slst at the end)",
+        "Yellow yarn (petals): R3: 3ch, dc clusters all around in the 16dc (slst at the end)",
+        "Green yarn (squaring the circle): R4: 4ch (counts as a tr), corner start 2tr, sides 3dc / hdc sections, full corner (3tr, 3ch, 3tr), repeat until the square is complete, end with 3tr in the first stitch and 3ch (slst at the end)"
+      ],
+      "status": "to confirm with the sister: the crossed-out 3dc in R4"
+    },
+    {
+      "photo": "03-tulip-coaster.jpeg",
+      "item": "flower coaster (round, cream centre, green ring, pink flower edge)",
+      "yarn": "3-ply acrylic",
+      "hook_mm": 3.5,
+      "pattern": [
+        "White yarn (2ch at the start of every round, slst at the end of every round):",
+        "R1: mr, 2ch, 12dc in mr",
+        "R2: ch 2, dc inc all across (12dc becomes 24dc)",
+        "R3: (1dc, 1inc)x12",
+        "R4: (2dc, 1inc)x12",
+        "R5: (3dc, 1inc)x12",
+        "Green yarn (leaves):",
+        "R6: ch 1, sc (ch 3, skip 2 stitches, sc) until the end, slst",
+        "R7: unclear handwriting, to confirm with the sister",
+        "Pink yarn (flower):",
+        "R8: ch10, 9 single crochet increase, ch 1, fasten off, sew flower (repeat until 2 flowers)"
+      ],
+      "status": "to confirm with the sister: does this page match the coaster photo, and the unclear parts of R7 and R8"
+    }
+  ]
+}
